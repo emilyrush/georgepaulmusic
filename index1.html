@@ -31,14 +31,20 @@ body, html {
 #myNavbar {
     background-color: #41B6D9;
 }
+.bandimage {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  object-position: 0, 50%;
+}
 </style>
 <body>
 
-<!-- Navbar (sit on top) -->
+<!-- --------------------------------------------------------Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
-    <!-- Right-sided navbar links -->
+    <!-- ------------------------Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <div class="w3-dropdown-hover">
@@ -51,12 +57,12 @@ body, html {
               <a href="andmore.html" class="w3-bar-item w3-button">And more!</a>
             </div>
           </div>
-      <a href="calendar.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> CALENDAR</a>
-      <a href="#listen" class="w3-bar-item w3-button"><i class="fa fa-th"></i> LISTEN</a>
-      <a href="#shop" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> SHOP</a>
+      <a href="calendar.html" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> CALENDAR</a>
+      <a href="#listen" class="w3-bar-item w3-button"><i class="fa fa-music"></i> LISTEN</a>
+      <a href="#shop" class="w3-bar-item w3-button"><i class="fa fa-shopping-basket"></i> SHOP</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <!-- -------------Hide right-floated links on small screens and replace them with a menu icon -->
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
@@ -64,7 +70,7 @@ body, html {
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- --------------------Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
@@ -87,43 +93,68 @@ body, html {
 <header class="bgimg-1 w3-display-container display-top-middle" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">George Paul Music</span><br>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Meet the man</a></p>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">About</a></p>
   </div> 
 </header>
 
 <!-- About Section -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT GEORGE</h3>
-    <div class="w3-col m6 w3-center w3-padding-large" style="float: right">
-    <img src="Photos/george2.jpg" class="w3-round w3-image" alt="George" width="70%">
+  <hr>
+  <h3 class="w3-center">ABOUT GEORGE</h3><br>
+    <div class="w3-col m6 w3-center w3-padding-medium" style="float: right">
+    <img src="Photos/george2.jpg" class="w3-round w3-image" alt="George" width="80%">
     </div>
     I have been playing the piano since I was three years old. In fact, though I was introduced to music while I was still in uterus, as my mom played both her piano and her accordion while she was pregnant with me. I guess I’ve been trying to get back inside the music ever since.<br>
             
     <br>In the 2nd grade, I was introduced to the violin, which I fell in love with and played in the orchestra all the way through high school. This and being taken to orchestral concerts by my mom gave me a great background in and love for classical music. However, in my senior year in high school, I discovered Jazz, and left the violin behind to concentrate on piano. After 15 years of playing in honky tonks, blues bars and country bands, I was totally burnt out and quit playing entirely for 15 years.<br>
 
     <br>After a life altering divorce, I went back to the piano and the music started pouring out. I have always had melodies playing in my head, but now they really began to mature and I started writing them down. Over the years, my skills kept improving til now there seems to be a direct connection between my heart/emotions and my hands and I can capture that emotion in a melody that you will feel deeply and remember for a long time.</p>
-  
-  <h3 class="w3-center" id="bands">BANDS</h3>
-    <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+<hr>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:32px 16px" id="bands">
+  <h3 class="w3-center">BANDS</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Photos/playingwithfyre.jpg" alt="Playing With Fyre" style="width:100%" class="bandimage">
+        <div class="w3-container">
+          <center><h3>Playing With Fyre</h3>
+          <p class="w3-opacity">George Paul<br> Rob Zisette</p></center>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Photos/george_cailen.JPG" alt="Joyful Noise" style="width:100%" class="bandimage">
+        <div class="w3-container">
+          <center><h3>Joyful Noise</h3>
+          <p class="w3-opacity">George Paul<br> Cailen Campbell</p></center>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <a href="http://www.theivoryboys.com/"><div class="w3-card">
+        <img src="Photos/ivoryboys.jpg" alt="The Ivory Boys" style="width:100%" class="bandimage"></a>
+        <div class="w3-container">
+            <center><h3>The Ivory Boys</h3>
+          <p class="w3-opacity">George Paul, David DiGiuseppe,<br> Jim Roberts</p></center>
+          <a href="http://www.theivoryboys.com/"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p></a>
+        </div>
+      </div>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Photos/potentbrew.jpg" alt="Potent Brew" style="width:100%" class="bandimage">
+        <div class="w3-container">
+            <center><h3>Potent Brew</h3>
+          <p class="w3-opacity">George Paul, Ryan McKasson,<br> Steve Kemble</p></center>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -151,21 +182,21 @@ body, html {
       <div class="w3-card">
         <img src="Photos/one_last_dance.jpg" alt="One Last Dance" style="width:100%">
         <div class="w3-container">
-          <center><h3>One Last Dance</h3>
-          <p class="w3-opacity">Romantic Waltzes</p></center>
-          <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
-          <p><a href="https://store.cdbaby.com/cd/georgepaul1"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Buy</button></a></p>
+          <center><h3>George Paul</h3>
+          <p class="w3-opacity">One Last Dance</p>
+          <p>Heartfelt original waltzes</p></center>
+          <p><a href="https://store.cdbaby.com/cd/georgepaul1"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-shopping-cart"></i> Buy</button></a></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <img src="Photos/potentbrewlive.jpg" alt="Potent Brew Live" style="width:100%">
         <div class="w3-container">
-          <h3>Anja Doe</h3>
-          <p class="w3-opacity">Art Director</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <center><h3>Potent Brew</h3>
+          <p class="w3-opacity">Potent Brew Live</p>
+          <p>Live contra dance music</p></center>
+          <a href="https://store.cdbaby.com/cd/potentbrew"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-shopping-cart"></i> Buy</button></a></p>
         </div>
       </div>
     </div>
@@ -173,9 +204,9 @@ body, html {
       <div class="w3-card">
         <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
         <div class="w3-container">
-          <h3>Mike Ross</h3>
+            <center><h3>Mike Ross</h3>
           <p class="w3-opacity">Web Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p></center>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -184,9 +215,9 @@ body, html {
       <div class="w3-card">
         <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
         <div class="w3-container">
-          <h3>Dan Star</h3>
+            <center><h3>Dan Star</h3>
           <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p></center>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
