@@ -6,37 +6,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: top;
-  background-size: cover;
-  background-image: url("Photos/george.jpg");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-.w3-jumbo {
-    color: white;
-}
-#myNavbar {
-    background-color: #41B6D9;
-}
-.bandimage {
-  height: 250px;
-  width: 250px;
-  object-fit: cover;
-  object-position: top;
-}
 </style>
 <body>
 
@@ -73,7 +45,7 @@ body, html {
 <!-- --------------------Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">HIRE GEORGE</a>
   <div class="w3-dropdown-hover">
         <button class="w3-button">Bands</button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -84,8 +56,8 @@ body, html {
             <a href="andmore.html" class="w3-bar-item w3-button">And more!</a>
         </div>
   <a href="#calendar" onclick="w3_close()" class="w3-bar-item w3-button">CALENDAR</a>
-  <a href="#albums" onclick="w3_close()" class="w3-bar-item w3-button">LISTEN</a>
-  <a href="#shop" onclick="w3_close()" class="w3-bar-item w3-button">SHOP</a>
+  <a href="#listen" onclick="w3_close()" class="w3-bar-item w3-button">LISTEN</a>
+  <a href="#albums" onclick="w3_close()" class="w3-bar-item w3-button">SHOP</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
@@ -102,7 +74,7 @@ body, html {
   <hr>
   <h3 class="w3-center">ABOUT GEORGE</h3><br>
     <div class="w3-col m6 w3-center w3-padding-medium" style="float: right">
-    <img src="Photos/george2.jpg" class="w3-round w3-image" alt="George" width="80%">
+    <img src="Photos/george2.JPG" class="w3-round w3-image" alt="George" width="80%">
     </div>
     I have been playing the piano since I was three years old. In fact, though I was introduced to music while I was still in uterus, as my mom played both her piano and her accordion while she was pregnant with me. I guess I’ve been trying to get back inside the music ever since.<br>
             
@@ -227,7 +199,7 @@ body, html {
 </div>
 
 <!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+<!-- <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-quarter">
     <span class="w3-xxlarge">14+</span>
     <br>Partners
@@ -244,10 +216,10 @@ body, html {
     <span class="w3-xxlarge">150+</span>
     <br>Meetings
   </div>
-</div>
+</div> -->
 
 <!-- Work Section -->
-<div class="w3-container" style="padding:32px 16px" id="work">
+<!-- <div class="w3-container" style="padding:32px 16px" id="work">
   <h3 class="w3-center">OUR WORK</h3>
   <p class="w3-center w3-large">What we've done for people</p>
 
@@ -280,19 +252,19 @@ body, html {
       <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<!-- <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
-</div>
+</div> -->
 
 <!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
+<!-- <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>Our Skills.</h3>
@@ -316,10 +288,10 @@ body, html {
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:32px 16px" id="pricing">
+<!-- <div class="w3-container w3-center w3-dark-grey" style="padding:32px 16px" id="pricing">
   <h3>PRICING</h3>
   <p class="w3-large">Choose a pricing plan that fits your needs.</p>
   <div class="w3-row-padding" style="margin-top:64px">
@@ -377,11 +349,11 @@ body, html {
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:32px 16px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <p class="w3-center w3-large">Hire George:</p>
   <div style="margin-top:48px">
     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rosesforanna@gmail.com</p>
     <br>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
@@ -405,7 +377,6 @@ body, html {
   <div class="w3-xlarge w3-section">
     <a href="https://www.facebook.com/georgepaulmusic/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 <script>
