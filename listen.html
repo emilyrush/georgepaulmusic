@@ -1,11 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>George Paul Music</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
 
+</style>
+<body>
 
-
-<center>
-    <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/QuH4CNQtxi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<br>
-    <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/e_oc0CgZcPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- --------------------------------------------------------Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="index1.html" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- ------------------------Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <div class="w3-dropdown-hover">
+            <a href="#bands"><button class="w3-button">BANDS</button></a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="playingwithfyre.html" class="w3-bar-item w3-button">Playing With Fyre</a>
+              <a href="potentbrew.html" class="w3-bar-item w3-button">Potent Brew</a>
+              <a href="andmore.html" class="w3-bar-item w3-button">And more!</a>
+            </div>
+          </div>
+      <a href="#calendar" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> CALENDAR</a>
+      <a href="listen.html" class="w3-bar-item w3-button"><i class="fa fa-music"></i> LISTEN</a>
+      <a href="#albums" class="w3-bar-item w3-button"><i class="fa fa-shopping-basket"></i> SHOP</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
-</center>
+    <!-- -------------Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- --------------------Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">HIRE GEORGE</a>
+  <div class="w3-dropdown-hover">
+        <button class="w3-button">Bands</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="playingwithfyre.html" class="w3-bar-item w3-button">Playing With Fyre</a>
+            <a href="potentbrew.html" class="w3-bar-item w3-button">Potent Brew</a>
+            <a href="andmore.html" class="w3-bar-item w3-button">And more!</a>
+        </div>
+  <a href="#calendar" onclick="w3_close()" class="w3-bar-item w3-button">CALENDAR</a>
+  <a href="listen.html" onclick="w3_close()" class="w3-bar-item w3-button">LISTEN</a>
+  <a href="#albums" onclick="w3_close()" class="w3-bar-item w3-button">SHOP</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+
+<br><br>
+<div id="myBtnContainer" style="padding: 20px">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('george')"> George</button>
+  <button class="btn" onclick="filterSelection('playingWithFyre')"> Playing With Fyre</button>
+  <button class="btn" onclick="filterSelection('ivoryBoys')"> Ivory Boys</button>
+  <button class="btn" onclick="filterSelection('potentBrew')"> Potent Brew</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+    <div class="column george">
+      <div class="content">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/xzac30BU06Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4>George Paul</h4>
+        <p>Babar's Waltz</p>
+      </div>
+    </div>
+    <div class="column playingWithFyre">
+      <div class="content">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/0WqPaEaMB08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4>Playing With Fyre</h4>
+            <p>Boonedoggle contra dance, Caller Terry Doyle</p>
+      </div>
+      </div>
+      
+    <div class="column playingWithFyre">
+        <div class="content">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/XSXHFrC8BE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4>Playing With Fyre</h4>
+            <p>A New Year's Affair in Jonesborough, TN</p>
+        </div>
+    </div>
+
+    <div class="column ivoryBoys">
+      <div class="content">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/QuH4CNQtxi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+        <h4>The Ivory Boys</h4>
+        <p>Jesse Edgerton & The Ivory Boys at Chattahoochee Country Dancers in Atlanta, Ga.</p>
+      </div>
+    </div>
+
+
+    <div class="column ivoryBoys">
+      <div class="content">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/e_oc0CgZcPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4>The Ivory Boys</h4>
+        <p>Contra at Appalachian State University</p>
+      </div>
+    </div>
+
+
+      <div class="column potentBrew">
+        <div class="content">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/EzXS2OAap0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h4>Potent Brew</h4>
+          <p>Grey Eagle Contra Dance, Caller Terry Doyle</p>
+        </div>
+      </div>
+
+      <div class="column potentBrew">
+        <div class="content">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/vuhh2MOMdUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h4>Potent Brew</h4>
+      <p>Featuring Ryan McKasson, caller Terry Doyle</p>
+    </div>
+  </div>
+
+
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>
