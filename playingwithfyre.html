@@ -12,56 +12,49 @@
 </style>
 <body>
 <!-- --------------------------------------------------------Navbar (sit on top) -->
-<div class="w3-container">
-  <p><br><br></p>
-</div>
 <div class="w3-top">
-        <div class="w3-bar w3-card" id="myNavbar">
-          <a href="index1.html" class="w3-bar-item w3-button w3-wide">HOME</a>
-          <!-- ------------------------Right-sided navbar links -->
-          <div class="w3-right w3-hide-small">
-            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-            <div class="w3-dropdown-hover">
-                  <a href="#bands"><button class="w3-button">BANDS</button></a>
-                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="playingwithfyre.html" class="w3-bar-item w3-button">Playing With Fyre</a>
-                    <a href="http://theivoryboys.com" class="w3-bar-item w3-button">The Ivory Boys</a>
-                    <a href="joyfulnoise.html" class="w3-bar-item w3-button">Joyful Noise</a>
-                    <a href="potentbrew.html" class="w3-bar-item w3-button">Potent Brew</a>
-                    <a href="andmore.html" class="w3-bar-item w3-button">And more!</a>
-                  </div>
-                </div>
-            <a href="calendar.html" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> CALENDAR</a>
-            <a href="#listen" class="w3-bar-item w3-button"><i class="fa fa-music"></i> LISTEN</a>
-            <a href="#albums" class="w3-bar-item w3-button"><i class="fa fa-shopping-basket"></i> SHOP</a>
-            <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="https://georgepaulmusic.herokuapp.com/" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- ------------------------Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <div class="w3-dropdown-hover">
+            <a href="#bands"><button class="w3-button">BANDS</button></a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="https://georgepaulmusic.herokuapp.com/#calendar" class="w3-bar-item w3-button">Playing With Fyre</a>
+              <a href="potentbrew.html" class="w3-bar-item w3-button">Potent Brew</a>
+              <a href="andmore.html" class="w3-bar-item w3-button">And more!</a>
+            </div>
           </div>
-          <!-- -------------Hide right-floated links on small screens and replace them with a menu icon -->
-      
-          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-            <i class="fa fa-bars"></i>
-          </a>
+      <a href="https://georgepaulmusic.herokuapp.com/#calendar" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> CALENDAR</a>
+      <a href="listen.html" class="w3-bar-item w3-button"><i class="fa fa-music"></i> LISTEN</a>
+      <a href="https://georgepaulmusic.herokuapp.com/#albums" class="w3-bar-item w3-button"><i class="fa fa-shopping-basket"></i> SHOP</a>
+      <a href="https://georgepaulmusic.herokuapp.com/#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- -------------Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- --------------------Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">HIRE GEORGE</a>
+  <div class="w3-dropdown-hover">
+        <button class="w3-button">Bands</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="playingwithfyre.html" class="w3-bar-item w3-button">Playing With Fyre</a>
+            <a href="potentbrew.html" class="w3-bar-item w3-button">Potent Brew</a>
+            <a href="andmore.html" class="w3-bar-item w3-button">And more!</a>
         </div>
-      </div>
-      
-      <!-- --------------------Sidebar on small screens when clicking the menu icon -->
-      <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <div class="w3-dropdown-hover">
-              <button class="w3-button">Bands</button>
-              <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                  <a href="playingwithfyre.html" class="w3-bar-item w3-button">Playing With Fyre</a>
-                  <a href="http://theivoryboys.com" class="w3-bar-item w3-button">The Ivory Boys</a>
-                  <a href="joyfulnoise.html" class="w3-bar-item w3-button">Joyful Noise</a>
-                  <a href="potentbrew.html" class="w3-bar-item w3-button">Potent Brew</a>
-                  <a href="andmore.html" class="w3-bar-item w3-button">And more!</a>
-              </div>
-        <a href="#calendar" onclick="w3_close()" class="w3-bar-item w3-button">CALENDAR</a>
-        <a href="#listen" onclick="w3_close()" class="w3-bar-item w3-button">LISTEN</a>
-        <a href="#albums" onclick="w3_close()" class="w3-bar-item w3-button">SHOP</a>
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-      </nav>
+  <a href="https://georgepaulmusic.herokuapp.com/#calendar" onclick="w3_close()" class="w3-bar-item w3-button">CALENDAR</a>
+  <a href="listen.html" onclick="w3_close()" class="w3-bar-item w3-button">LISTEN</a>
+  <a href="https://georgepaulmusic.herokuapp.com/#albums" onclick="w3_close()" class="w3-bar-item w3-button">SHOP</a>
+  <a href="https://georgepaulmusic.herokuapp.com/#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
 
 
 
@@ -69,21 +62,53 @@
 
 <!-- -----------------------------------------MAIN PAGE----------------------------- -->
 
-<center>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/0WqPaEaMB08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- About Section -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <hr>
+  
+  <h3 class="w3-center">ABOUT PLAYING WITH FYRE</h3><br>
+    <div class="w3-col m6 w3-center w3-padding-large" style="float: right">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0WqPaEaMB08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    Rob Zisette, fiddle, of Toss the Possum, and George Paul, piano, formally with the Avant Gardeners are the core of this Band. They met on stage at the Floyd contra dance in 2015. They had never met before but within 2 mins of playing for the sound check, they knew it was going to be a special night and the chemistry was palpable. They bonded magically through the music and gave the dancers an incredible night to remember.  
+    <br>
+    <br>Their second gig was in Jonesborough, TN and the same synchronicity happened. Rob’s fiery fiddle playing and George’s funky, bluesy piano create an ambience of dance sound seldom experienced. They have rocked it out at River Falls, The Old Farmers Ball, the Grey Eagle, Atlanta, etc. Steve Kemble, percussionist extraordinaire, provides them with incredible grooves. And the addition of David DiGiuseppe on accordion (you may know of him from his bands <a href="http://footlooseband.com/">Footloose</a> and <a href="http://contrazz.com/">Contrazz</a>) has rounded out a powerful 4-piece band that totally rocks the house!</p>
+<hr>
+</div>
 
-  <br>
+<center>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/XSXHFrC8BE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
-
-
-
-
+<hr>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:32px 16px" id="contact">
+  <h3 class="w3-center">HIRE GEORGE</h3>
+  <!-- <p class="w3-center w3-large">Hire George:</p> -->
+  <div style="margin-top:48px">
+    <center>
+    <p><a href="https://www.facebook.com/georgepaulmusic/"><i class="fa fa-facebook-official fa-fw w3-xxlarge w3-margin-right"></a></i> George Paul Music on Facebook</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (434) 996-6227</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rosesforanna@gmail.com</p>
+  </center>
+    <br>
+    <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  </div>
+</div>
 
 
 
 <!-- -----------------------------------Footer--------------------------------------- -->
-<footer class="w3-center w3-black w3-padding-64">
+<footer class="w3-center w3-padding-64">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
           <a href="https://www.facebook.com/georgepaulmusic/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>

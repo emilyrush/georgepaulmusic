@@ -1,5 +1,8 @@
 body {font-family: "Lato", sans-serif}
 
+footer {
+  background-color: #41B6D9;
+}
 
 body, html {
     height: 100%;
