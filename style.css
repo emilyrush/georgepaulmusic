@@ -147,7 +147,7 @@ h1 {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #7DBC1D;
+  background-color: #41B6D9;
 }
 
 .namecontainer:hover .nameoverlay {
